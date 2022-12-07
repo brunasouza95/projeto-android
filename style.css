@@ -32,6 +32,7 @@ Cores usadas no projeto
     --fonte-android: 'android';
 
 }
+
 * { /*Asterisco para configurações globais*/
     margin: 0px;
     padding: 0px; /*Distância entre um elemento e outro...*/
@@ -60,7 +61,6 @@ header > h1 {
     font-size: 3em;
     margin-bottom: 20px; /*Distância inferior entre o elemento em questão e outro posterior.*/
     text-shadow: 2px 2px 0px rgba(0, 0, 0, 0.514); /*Sombras em textos*/
-    
 }
 
 header > p {
@@ -72,9 +72,6 @@ header > p {
     padding-left: 10px;
     margin: auto; /*Configurações de posição e distância entre elemento e borda.*/
     text-shadow: 2px 2px 0px rgba(0, 0, 0, 0.315);
-    
-
-    
 }
 
 nav {
