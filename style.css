@@ -161,7 +161,7 @@ main img {
 }
 
 main img.pequena {/*Imagens não são consideradas "blocos"*/ /*Configuração individual de emergência ára imagem pequena demais de forma a adaptá-la a página sem precisar gerar manualmente outra resolução*/
-    max-width: 350px;
+    max-width: 340px;
     display: block; /*Bloqueia a imagem na mesma posição?*/
     margin: auto; /*cria uma margin automática entre a imagem e a largura do site. Pode ser que com imagens, funcione apenas aliádo ao comando display e suas variações...*/
 }
