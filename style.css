@@ -1,0 +1,230 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
+@font-face {
+    font-family: android;
+    src: url(Desafio10/fontes/idroid.otf) format('opentype');
+    font-weight: normal;
+}
+
+/*
+Cores usadas no projeto
+#c5ebd6
+#83e1ad
+#3ddc84
+#2fa866
+#1a5c37
+#063d1e
+
+*/
+
+:root { /*root: = Variáveis
+    EX = -- + nomedavariável/--cordotitulo*/
+    --cordofundo: #c5ebd6;
+    --cor01: #83e1ad;
+    --cor02: #3ddc84;
+    --cor03: #2fa866;
+    --cor04: #1a5c37;
+    --cor05: #063d1e;
+    --fonte-padrao: Arial, Verdana, Helvetica, sans-serif;
+    --fonte-destaque: 'Bebas Neue', cursive;
+    --fonte-android: 'android';
+
+}
+* { /*Asterisco para configurações globais*/
+    margin: 0px;
+    padding: 0px; /*Distância entre um elemento e outro...*/
+}
+body {
+    background-color: var(--cordofundo);
+    font-family: var(--fontepadrao);
+
+
+}
+
+a.externo::after {
+    content: '\00A0\1F517';
+}
+
+header {
+    background-image: linear-gradient(to bottom, var(--cor03), var(--cor05));
+    min-height: 150px; /*Altura mínima da caixa/cabeçalho*/
+    text-align: center;
+    padding-top: 40px;/*Espaço entre o topo da caixa e um elemento secundário contido nela*/
+}
+
+header > h1 {
+    color: white;
+    font-family: var(--fonte-destaque);
+    font-size: 3em;
+    margin-bottom: 20px; /*Distância inferior entre o elemento em questão e outro posterior.*/
+    text-shadow: 2px 2px 0px rgba(0, 0, 0, 0.514); /*Sombras em textos*/
+    
+}
+
+header > p {
+    color: white;
+    font-size: 1.2em;
+    font-family: var(--fonte-padrao);
+    max-width: 500px; /*Configurações de widht transformar elementos em blocos e as vezes é necessário configurar sua posição*/
+    padding-right: 10px; /*Configuração de distância entre elemento e borda, para caso a resolução do navegador seja diminuída e o bloco/elemento se adapte a mudança de tamanho.*/
+    padding-left: 10px;
+    margin: auto; /*Configurações de posição e distância entre elemento e borda.*/
+    text-shadow: 2px 2px 0px rgba(0, 0, 0, 0.315);
+    
+
+    
+}
+
+nav {
+    background-color: var(--cor05);
+    box-shadow: 0px 7px 9px rgba(0, 0, 0, 0.192);
+    padding-bottom: 15px;
+    padding-left: 10px; /*Referente a distância da barra de navegação a direita da margem*/
+    
+}
+
+nav > a { /*Referênte aos links na barra de navegação*/
+    color: white;
+    padding: 10px; /*Distância entre um link e outro...*/
+    text-decoration: none; /*Retira o sublinhado do texto...*/
+    font-weight: bold; /*Referente ao peso da fonte/ao corpo fonte*/
+    transition-duration: .5s; /*Referênte a duração de caixa de animação de seleção de elemento/
+}
+
+nav a:hover {
+    background-color: var(--cor03); /*Cor dar caixa de seleção*/
+    border-radius: 5px;
+    color: #063d1e; /*Cor da fonte ao selecionar o elemento*/
+    
+}
+
+main {
+    background-color: white;
+    min-width: 300px; /*Largura minima da caixa*/
+    max-width: 1000px; /*Largura máxima da caixa*/
+    margin: auto; /*Centraliza o conteúdo*/
+    margin-bottom: 30px; /*Distância entre o conteúdo principal e elementos posteriores...*/
+    border-radius: 0px 0px 10px 10px; /*Relativo a arredondamento de borda*/
+    padding: 20px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.418);/*Relativo a sombra em borda/em caixa*/
+    
+
+    
+    
+}
+
+main h1 {
+    color: var(--cor05);
+    font-family: var(--fonte-android);
+    font-weight: normal;
+}
+
+main h2 {
+    font-family: var(--fonte-android);
+    color: var(--cor04);
+    font-size: 1.3em;
+    background-image: linear-gradient(to right, var(--cor01), transparent);
+    text-indent: 8px;
+    font-weight: normal;
+}
+
+main p {
+    margin: 15px 0px;
+    text-align: justify;
+    font-family: var(--fonte-padrao);
+    line-height: 1em;
+    text-indent: 30px; /*Distância entre a primeira linha e a margem*/
+    font-weight: normal;
+    font-size: 1em; /*Relativo a tamanho de fonte.*/
+    line-height: 2em;
+}
+
+main strong {
+    color: var(--cor04);
+    font-weight: bold;
+    padding: 2px 6px;
+}
+
+main a {
+    text-decoration: none;
+    font-weight: bold;
+    color: var(--cor05);
+    background-color: var(--cor01);
+}
+
+main a:hover {
+    text-decoration: underline;
+    color: var(--cor04);
+}
+
+main img {
+    width: 100%; /*Imagens se adaptam a resolução da tela/navegador*/
+}
+
+main img.pequena {/*Imagens não são consideradas "blocos"*/ /*Configuração individual de emergência ára imagem pequena demais de forma a adaptá-la a página sem precisar gerar manualmente outra resolução*/
+    max-width: 350px;
+    display: block; /*Bloqueia a imagem na mesma posição?*/
+    margin: auto; /*cria uma margin automática entre a imagem e a largura do site. Pode ser que com imagens, funcione apenas aliádo ao comando display e suas variações...*/
+}
+
+.video { /*Relativo a caixa do elemento video*/
+    position: relative;
+    background-color: white;
+    height: 0px;
+    margin-left: -20px;
+    margin-right: 15px;
+    padding-bottom: 59%;
+}
+
+.video >iframe { /*Relativo ao elemento video*/
+    position: absolute;
+    top: 5%; /*Relativo ao afastamento superior do elemento*/
+    left: 5%; /*Relativo ao afastamento lateral do elemento a sua direita*/
+    width: 90%; /*Relativo ao tamanho lateral da caixa*/
+    height: 90%; /*Relativo a altura da caixa*/
+}
+
+aside {
+    background-color: var(--cor01); /*Referente a cor de fundo da caixa que contém o conteúdo extra*/
+    padding: 10px; /*Referente a distância da caixa que contém o conteúdo extra do elemento anterior*/
+    border-radius: 10px;
+}
+
+aside h3 { /*Relativo a caixa que contém o h3 dentro do conteúdo extra*/
+    background-color: var(--cor04);
+    color: white; /*Referente a cor da fonte*/
+    padding: 5px; /*Refente a distância do parágrafo e as margens da caixa*/
+    margin: -10px -10px;/*Referente a margem superior da caixa que contém o conteúdo extra*/
+    border-radius: 10px 10px 0px 0px;
+    font-family: var(--fonte-android);
+}
+
+aside > ul { /*Relativo a lista dentro do conteúdo extra*/
+    list-style-type: '\2714\00A0\00A0';
+    list-style-position: inside;
+    columns: 2;
+}
+
+footer {
+    background-color: var(--cor05);
+    color: white;
+    text-align: center;
+    font-size: 0.8;
+    padding: 5px;
+    
+}
+
+footer > p > a {
+    color: white;
+    font-weight: bolder;
+    text-decoration: none;
+} 
+
+footer a:hover {
+    text-decoration: underline;
+    color: var(--cor01);
+}
+
+
