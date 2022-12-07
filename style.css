@@ -90,7 +90,7 @@ nav > a { /*Referênte aos links na barra de navegação*/
     padding: 10px; /*Distância entre um link e outro...*/
     text-decoration: none; /*Retira o sublinhado do texto...*/
     font-weight: bold; /*Referente ao peso da fonte/ao corpo fonte*/
-    transition-duration: .5s; /*Referênte a duração de caixa de animação de seleção de elemento/
+    transition-duration: .5s; /*Referênte a duração de caixa de animação de seleção de elemento*/
 }
 
 nav a:hover {
