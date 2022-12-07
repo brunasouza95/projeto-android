@@ -68,7 +68,7 @@ header > p {
     font-size: 1.2em;
     font-family: var(--fonte-padrao);
     max-width: 500px; /*Configurações de widht transformar elementos em blocos e as vezes é necessário configurar sua posição*/
-    padding-right: 10px; /*Configuração de distância entre elemento e borda, para caso a resolução do navegador seja diminuída e o bloco/elemento se adapte a mudança de tamanho.*/
+    padding-right: 1px; /*Configuração de distância entre elemento e borda, para caso a resolução do navegador seja diminuída e o bloco/elemento se adapte a mudança de tamanho.*/
     padding-left: 10px;
     margin: auto; /*Configurações de posição e distância entre elemento e borda.*/
     text-shadow: 2px 2px 0px rgba(0, 0, 0, 0.315);
