@@ -53,6 +53,7 @@ header {
     min-height: 150px; /*Altura mínima da caixa/cabeçalho*/
     text-align: center;
     padding-top: 40px;/*Espaço entre o topo da caixa e um elemento secundário contido nela*/
+    
 }
 
 header > h1 {
