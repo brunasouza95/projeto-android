@@ -104,8 +104,8 @@ nav a:hover {
 
 main {
     background-color: white;
-    min-width: 200px; /*Largura minima da caixa*/
-    max-width: 1000px; /*Largura máxima da caixa*/
+    min-width: 200px; /*Largura minima da caixa para resoluções menores*/
+    max-width: 1000px; /*Largura máxima da caixa para resoluções maiores e navegadores desktop*/
     margin: auto; /*Centraliza o conteúdo*/
     margin-bottom: 30px; /*Distância entre o conteúdo principal e elementos posteriores...*/
     border-radius: 0px 0px 10px 10px; /*Relativo a arredondamento de borda*/
