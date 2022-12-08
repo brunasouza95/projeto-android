@@ -83,6 +83,7 @@ nav {
     padding-top: 10px;
     padding-bottom: 15px;
     padding-left: 10px; /*Referente a distância da barra de navegação a direita da margem*/
+    line-height: 40px;
 
     
 }
