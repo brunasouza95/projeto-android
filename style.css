@@ -36,6 +36,7 @@ Cores usadas no projeto
 * { /*Asterisco para configurações globais*/
     margin: 0px;
     padding: 0px; /*Distância entre um elemento e outro...*/
+    
 }
 body {
     background-color: var(--cordofundo);
@@ -50,6 +51,7 @@ a.externo::after {
 
 header {
     background-image: linear-gradient(to bottom, var(--cor03), var(--cor05));
+
     min-height: 150px; /*Altura mínima da caixa/cabeçalho*/
     text-align: center;
     padding-top: 40px;/*Espaço entre o topo da caixa e um elemento secundário contido nela*/
@@ -71,6 +73,7 @@ header > p {
     max-width: 500px; /*Configurações de widht transformar elementos em blocos e as vezes é necessário configurar sua posição*/
     padding-right: 1px; /*Configuração de distância entre elemento e borda, para caso a resolução do navegador seja diminuída e o bloco/elemento se adapte a mudança de tamanho.*/
     padding-left: 10px;
+    padding-bottom: 10px;
     margin: auto; /*Configurações de posição e distância entre elemento e borda.*/
     text-shadow: 2px 2px 0px rgba(0, 0, 0, 0.315);
 }
@@ -78,8 +81,10 @@ header > p {
 nav {
     background-color: var(--cor05);
     box-shadow: 0px 7px 9px rgba(0, 0, 0, 0.192);
+    padding-top: 10px;
     padding-bottom: 15px;
     padding-left: 10px; /*Referente a distância da barra de navegação a direita da margem*/
+
     
 }
 
